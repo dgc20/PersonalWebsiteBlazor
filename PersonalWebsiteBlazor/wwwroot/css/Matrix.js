@@ -1,7 +1,7 @@
 ﻿  var rows=11; // must be an odd number
-    var speed=50; // lower is faster
-    var reveal=2; // between 0 and 2 only. The higher, the faster the word appears
-    var effectalign="default" //enter "center" to center it.
+    var speed=1; // lower is faster
+    var reveal=.25; // between 0 and 2 only. The higher, the faster the word appears
+    var effectalign="center" //enter "center" to center it.
 
     /***********************************************
     * The Matrix Text Effect- by Richard Womersley (http://www.mf2fm.co.uk/rv)

@@ -1,18 +1,19 @@
 ﻿@page "/"
 @using PersonalWebsiteBlazor.Logic
+@using BootstrapBlazor.Components
 @inject IDemoLogic logic
 @inject ILogger<Index> logger
-<PageTitle>Index</PageTitle>
+<PageTitle>About Me</PageTitle>
 
 <head>
-	<title>Risen - FREE Bootstrap 5 Resume/CV Template For Developers</title>
+
 	
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Profolio Bootstrap 5 Template">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<meta name="author" content="Dan Cohen">    
 	<link rel="shortcut icon" href="favicon.ico"> 
 
 	
@@ -42,12 +43,12 @@
 							
 					
 							<ul class="social-list list-inline mx-auto">
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
+							<!--	<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-twitter fa-fw"></i></a></li>-->
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/dgc20"><i class="fa-brands fa-github fa-fw"></i></a></li>
 								
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
+								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://www.linkedin.com/in/daniel-cohen-946365175/"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
 								
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-stack-overflow fa-fw"></i></a></li>
+								<!--<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-stack-overflow fa-fw"></i></a></li>-->
 								
 							</ul><!--//social-list-->
 							
@@ -55,18 +56,18 @@
 						
 					</div><!--//top-bar-->
 			
-					<div id="matrix" class="resume-wrapper mx-auto rounded-2">
+					<div  class="resume-wrapper mx-auto rounded-2">
 						<div class="resume-header px-4 px-lg-5">
 							<div class="resume-profile-holder text-center">
 								<img class="resume-profile-pic rounded-circle" height ="350" width="250"  src="photos/IMG_0511.PNG" alt="image">
 								
-								<h2 class="resume-name text-uppercase">Daniel Cohen </h2>
+								<h2 class="resume-name text-uppercase">Daniel Cohen</h2>
 								<div class="resume-role-title text-uppercase">Data Engineer</div>
 								<div class="resume-contact mt-4">
 									<ul class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between">
 										<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-telephone-inbound me-2"></i> 732-421-3797</li>
 										<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-envelope me-2"></i> DGC20@pitt.edu</li>
-										<li class="list-inline-item me-lg-5"><i class="resume-contact-icon bi bi-globe me-2"></i> www.yourwebsite.com</li>
+										<li class="list-inline-item me-lg-5"><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/daniel-cohen-946365175/">My LinkedIn</a> </li>
 									</ul>
 								</div><!--//resume-contact-->
 							</div><!--//profile-holder-->
@@ -80,7 +81,7 @@
 										<div class="resume-summary-desc">
 										
 											<div>
-											I specialize in designing, implementing and maintaining scalable ETL and ELT data pipelines. I am currently at my role creating efficiencies for data flows while maintaining or improving data quality and integrity, and collaborate with various clients such as data scientists, analysts and project managers to ensure their data needs are supported. I have a breadth of experience with many technologies such as C#, SSIS, SQL, python, spark, and cloud platforms like Azure and GCP. My goal is to provide access to clean, quick, reusable data to help drive actionable insignts in a ever inscreasing data driven world.
+											I specialize in designing, implementing and maintaining scalable ETL and ELT data pipelines. I am currently at my role creating efficiencies for data flows while maintaining or improving data quality and integrity, and collaborate with various clients such as data scientists, analysts and project managers to ensure their data needs are supported. I have a breadth of experience with many technologies such as C#, SSIS, SQL, python, spark, and cloud platforms like Azure and GCP. My goal is to provide access to clean, quick, reusable data to help drive actionable insights in a ever increasing data driven world.
 											</div>	
 										</div>
 										
@@ -96,10 +97,10 @@
 											    <div class="resume-timeline-item-header mb-2">
 												    
 												    <div class="resume-position-meta d-flex justify-content-between mb-1">
-													    <div class="resume-position-time">2023 - Present</div>
+													    <div class="resume-position-time">2020 - Present</div>
 													    <div class="resume-company-name">Aetna a CVS Health Company</div>
 												    </div>
-											        <h3 class="resume-position-title mb-1">Data Engineer</h3>
+											        <h3 class="resume-position-title mb-1">Data Engineer(Apr 2023) and Jr. Data Engineer</h3>
 
 											    </div><!--//resume-timeline-item-header-->
 											    <div class="resume-timeline-item-desc">
@@ -114,8 +115,20 @@
 													    <li>Spearheading our migration into the cloud utilizing cost effective and architecture cloud solutions to
 															migrate our data engineering processes and products while maintaining usability during migration. </li>
 													    
-													    <li>Morbi condimentum, lorem in pharetra mollis, purus justo sollicitudin dolor, tristique vulputate mi odio sit amet ante.</li>
-													    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
+													    <li>Pioneer best practices and solutions for integrating our pipelines and products to enterprise cloud
+															environments developing ingress and egress, batch and incremental solutions in GCP and Azure with tools
+															such as C#, SSIS, Airflow, and ADF.
+														</li>
+													    <li class="typewriter"> Critical in developing pipelines to clean up and extract value from high volume (15 Bill. rows) usable
+																near-real time FHIR data from central BigQuery warehouse clinical data repository into our data mart and
+															cached into our blazor server website to drive actionable insights into health equity disparities our case
+																managers could take action on with our member base.
+															</li>
+															<li>
+																 Designed, implemented and maintain 20+ ETL pipelines to normalize and merge raw data from various
+																	sources including hadoop, flat files, web scrapes, and cloud warehouse tables across numerous healthcare
+																domains into usable, clean data to supply our transactional datamart through MSSQL.
+															</li>
 												    </ul>
 												    
 											    </div><!--//resume-timeline-item-desc-->
@@ -127,18 +140,20 @@
 											    <div class="resume-timeline-item-header mb-2">
 												    
 												    <div class="resume-position-meta d-flex justify-content-between mb-1">
-													    <div class="resume-position-time">2019 - 2023</div>
-													    <div class="resume-company-name">Meta</div>
+													    <div class="resume-position-time">2020 - 2020</div>
+													    <div class="resume-company-name">Aetna a CVS Health Company</div>
 												    </div>
-											        <h3 class="resume-position-title mb-1">Senior App Developer</h3>
+											        <h3 class="resume-position-title mb-1">Part-Time Data Engineer and Data Engineering Intern</h3>
 
 											    </div><!--//resume-timeline-item-header-->
 											    <div class="resume-timeline-item-desc">
 												    <ul class="resume-timeline-list">
 													    
-													    <li>Praesent nec semper eros. Aliquam quis turpis sed metus mollis luctus vitae rhoncus mi. At vero eos et accusamus et iusto odio dignissimos.</li>
-													    <li>Proin tempus eu arcu in semper. Quisque gravida, sem ut vehicula ultrices, diam est viverra odio, eget tristique tortor tortor sed neque.</li>
-													    <li>Suspendisse quis pharetra elit. Curabitur vitae cursus lacus, et bibendum magna. Donec in orci eu augue posuere mattis ut in turpis.</li>
+													    <li>Saved the company around 7000$ in two months through data engine job automation.</li>
+													    <li>Wrote, tested, and documented implementations of FTP jobs in C#.</li>
+													    <li> Assisted in the implementation of an agile scrum environment to our data engine team, as well as currently
+															help develop a more efficient process every sprint retrospective.</li>
+															<li>  Received highest internship reviews from my managers about my performance by not only meeting but well exceeding expectations for interns.</li>
 												    </ul>
 												    
 											    </div><!--//resume-timeline-item-desc-->
@@ -149,18 +164,21 @@
 											    <div class="resume-timeline-item-header mb-2">
 												    
 												    <div class="resume-position-meta d-flex justify-content-between mb-1">
-													    <div class="resume-position-time">2017 - 2019</div>
-													    <div class="resume-company-name">Coinbase</div>
+													    <div class="resume-position-time">2019 - 2019</div>
+													    <div class="resume-company-name">Bentley Systems</div>
 												    </div>
-											        <h3 class="resume-position-title mb-1">App Developer</h3>
+											        <h3 class="resume-position-title mb-1">Software Engineering Intern</h3>
 
 											    </div><!--//resume-timeline-item-header-->
 											    <div class="resume-timeline-item-desc">
 												    <ul class="resume-timeline-list">
 													    
-													    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-													    <li>Nulla velit dui, ultrices sit amet arcu eget, sodales lacinia lorem.</li>
-													    <li>Quisque semper nisi mauris, non ullamcorper nunc consectetur eget. </li>
+													    <li> Fixed issues related to the product in an efficient way, such as fixing SQL queries in two dialects while
+viewing the optimized query plan to cut run time by 27 seconds or 90 %, and other bug fixes.</li>
+													    <li>Wrote efficient, maintainable and traceable code which has important features for multiple customers
+in topics revolving around user properties as well as file management and display changes.</li>
+													    <li>Designed and implemented RESTful API’s for simple communication with the database for real time
+updates for example moving files on a website without refreshing.</li>
 													   
 												    </ul>
 												    
@@ -177,26 +195,27 @@
 										
 										<ul class="list-unstyled">
 								        <li class="mb-2">
-								            <div class="resume-skill-name">JavaScript</div>
+								            <div class="resume-skill-name"><i class="csharp-icon" ></i>C#</div>
 											<div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
 											  <div class="progress-bar resume-progress-bar" style="width: 98%"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">ReactJS</div>
+								            <div class="resume-skill-name"><i class="bi bi-filetype-sql"></i>MSSQL</div>
 								            <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
 											  <div class="progress-bar resume-progress-bar" style="width: 95%"></div>
 											</div>
 									        
 								        </li>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">Python</div>
+								            <div class="resume-skill-name"><i class="bi bi-diagram-2-fill"></i>
+SSIS</div>
 									        <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
 											  <div class="progress-bar resume-progress-bar" style="width: 92%"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">MongoDB</div>
+								            <div class="resume-skill-name"><i class="fa-brands fa-python"></i>Python</div>
 									        <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
 											  <div class="progress-bar resume-progress-bar" style="width: 86%"></div>
 											</div>
@@ -209,13 +228,37 @@
 									<hr>
 									
 									<section class="resume-skills-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-person-gear me-2"></i>Soft Skills</h3>
+										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-person-gear me-2"></i>Tools and Skills</h3>
 										<ul class="list-inline">
-								            <li class="list-inline-item"><span class="badge resume-skill-badge">Leadership</span></li>
-								            <li class="list-inline-item"><span class="badge resume-skill-badge">Project Management</span></li>
-								            
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">ETL and ELT pipeline development and design</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">API development</span></li>
+											 <li class="list-inline-item"><span class="badge resume-skill-badge">Query Optimization and Cost Management</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge"> Web Development</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Agile-Scrum</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Database Management and
+Design Distributed Systems</span></li>   <li class="list-inline-item"><span class="badge resume-skill-badge">Leadership</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Tidal Enterprise Scheduler</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">TeamCity</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Docker</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">PyCharm</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">AWS</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Hive</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Spark</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Hadoop</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">BigQuery</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Tez</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">CI\CD Deployment</span></li>
 								            <li class="list-inline-item"><span class="badge resume-skill-badge">DevOps</span></li>
-								            <li class="list-inline-item"><span class="badge resume-skill-badge">Public Speaking</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Database Design</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Project Management</span></li>
+											   <li class="list-inline-item"><span class="badge resume-skill-badge">Azure Cloud</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge"> Google Cloud Platform</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Azure DevOps</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Git</span></li>
+								            <li class="list-inline-item"><span class="badge resume-skill-badge">Visual Studio</span></li>
+											<li class="list-inline-item"><span class="badge resume-skill-badge">Jenkins</span></li>   
+								       
+										
 								            
 								            				           
 							            </ul>
@@ -225,14 +268,9 @@
 									
 									<section class="resume-projects-section resume-section">
 										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-code-slash me-2"></i>Projects</h3>
+										
 										<div class="item">
-											<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i><a href="#">Project lorem Ipsum</a></h4>
-											<div class="item-desc">
-												Project desc goes here aenean ut libero sit amet ante fermentum scelerisque non a leo.
-											</div>
-										</div><!--//item-->
-										<div class="item">
-											<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i><a href="#">Volutpat App</a></h4>
+											<h4 class="item-heading"><i class="item-icon bi bi-github me-2"></i><a href="https://github.com/dgc20/PersonalWebsiteBlazor">Personal Website</a></h4>
 											<div class="item-desc">
 												You can link to your project Github page.
 											</div>
@@ -247,15 +285,11 @@
 										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-book me-2"></i>Education</h3>
 										<ul class="list-unstyled">
 										    <li class="mb-2">
-										        <div class="resume-degree font-weight-bold">MSc in Computer Science</div>
-										        <div class="resume-degree-org">Oxford University</div>
-										        <div class="resume-degree-time">2016 - 2017</div>
+										        <div class="resume-degree font-weight-bold">BS in Computer Science</div>
+										        <div class="resume-degree-org">University of Pittsburgh</div>
+										        <div class="resume-degree-time">2017-2020</div>
 										    </li>
-										    <li>
-										        <div class="resume-degree font-weight-bold">BSc Maths and Physics</div>
-										        <div class="resume-degree-org">University of California, Berkeley</div>
-										        <div class="resume-degree-time">2012 - 2016</div>
-										    </li>
+										  
 									    </ul>
 									</section><!--//resume-section-->
 									
@@ -279,21 +313,7 @@
 											        <div class="col"><span class="item item-half"></span></div>
 										        </div><!--//resume-level-indicator-->
 										    </li>
-										     <li class="mb-2">
-										        <div class="resume-lang-name">Spanish</div>
-										        <div class="resume-level-indicator row gx-0 flex-nowrap">
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-half"></span></div>
-											        <div class="col"><span class="item"></span></div>
-										        </div><!--//resume-level-indicator-->
-										    </li>
+										   
 										</ul>
 									</section>
 									
